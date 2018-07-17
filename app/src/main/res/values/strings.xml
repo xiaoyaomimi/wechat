@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Wechat</string>
+    <string name="home">首页</string>
+    <string name="mine">我的</string>
+    <string name="message">消息</string>
+    <string name="camera">相机</string>
+    <string name="friend">朋友</string>
+    <string name="translating">翻译中</string>
+    <string name="translated">已翻译</string>
+</resources>

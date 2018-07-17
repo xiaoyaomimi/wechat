@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <com.caidong.wechat.ui.view.CustomViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_tool_bar">
+
+    </com.caidong.wechat.ui.view.CustomViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/main_tool_bar"
+        android:background="@drawable/changing_color_bar" />
+
+    <RadioGroup
+        android:id="@+id/main_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/index_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_index_rb"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textColor="@drawable/selector_text_color_gray_black"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/friend_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_index_rb"
+            android:gravity="center"
+            android:text="@string/friend"
+            android:textColor="@drawable/selector_text_color_gray_black"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/camera_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/ic_camera_alt_black_24dp" />
+
+        <RadioButton
+            android:id="@+id/message_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_index_rb"
+            android:gravity="center"
+            android:text="@string/message"
+            android:textColor="@drawable/selector_text_color_gray_black"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/mine_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_mine_rb"
+            android:gravity="center"
+            android:text="@string/mine"
+            android:textColor="@drawable/selector_text_color_gray_black"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+</RelativeLayout>
